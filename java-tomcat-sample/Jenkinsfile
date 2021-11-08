@@ -15,7 +15,7 @@ pipeline {
          stage('Deploy in Staging Environment'){
              steps {
                 input 'Approve Staging Deployment?'
-                build: 'TomcatDeploy_Job'
+                build 'TomcatDeploy_Job'
              }
                  
 
